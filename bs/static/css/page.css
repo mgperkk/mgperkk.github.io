@@ -1,0 +1,9 @@
+.nav-item {
+    padding: 0em .5em 0em .5em;
+}
+.mgperkk-logo {
+    padding: 0em 1em 0em 1em;
+}
+button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:hover, button.collapsed {
+    border: none;
+}

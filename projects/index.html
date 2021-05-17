@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<title>Коридор 307 кафедры >> mgperkk</title>-->
+		<title>Проекты > mgperkk</title>
+		<link rel="stylesheet" href="../static/css/bulma/bulma.min.css">
+		<link rel="stylesheet" href="../static/css/cocoen.min.css">
+		<link rel="stylesheet" href="../static/css/main.css">
+		<link rel="stylesheet" href="../static/css/navbar.css">
+        <link rel="stylesheet" href="../static/css/projects.css">
+	</head>
+
+	<body class="is-size-5">
+
+		<nav class="navbar is-transparent is-size-6" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand" style="padding-top: 5px; padding-bottom: 5px;">
+				<a href="/" style="position: absolute; left: 50%; margin-left: -75px; margin-top: 0; padding: 0; display: flex; align-items: center;">
+					<img src="../static/logo/mperkk.svg" style="width: 150px; max-height: none;">
+				</a>
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+				
+			<div id="navbarBasicExample" class="navbar-menu" style="padding-top: 10px; padding-bottom: 10px;">
+				<div class="navbar-start">
+					<a class="navbar-item" href="/elissgroup">Eliss-Group</a>
+					<a class="navbar-item is-active" href="/projects">Проекты</a>
+				</div>
+				<div class="navbar-end">
+					<a class="navbar-item" href="/team">Команда</a>
+					<a class="navbar-item" href="/kantakty">КАНтакты</a>
+				</div>        
+			</div>
+		</nav>
+
+        <section class="section">
+            <div class="tile is-ancestor">
+                <a href="../307" class="tile is-parent">
+                    <div class="tile is-child box mgperkk-tilebg">
+                        <video class="mgperkk-tilebg-video" poster="../kantent/gak/gak_tv.png" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                            <source src="../kantent/gak/gak_tv.mp4" type="video/mp4">
+                            <source src="../kantent/gak/gak_tv.webm" type="video/webm">
+                            Ой, ваш браузер не поддерживает HTML5 видео(
+                        </video>
+                        <div style="display: block; position: absolute; margin: 0 auto; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                            <span class="mgperkk-tilebg-nadpis has-text-centered">
+                                Коридор 307-ой кафедры
+                            </span>    
+                        </div>
+                    </div>
+                </a>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                      <p class="title">Лифт не работает</p>
+                    </div>
+                </div>
+                <!--
+                <div class="tile is-4 is-vertical is-parent">
+                  <div class="tile is-child box">
+                    <p class="title">One</p>
+                  </div>
+                  <div class="tile is-child box">
+                    <p class="title">Two</p>
+                  </div>
+                </div>
+                -->
+            </div>
+        </section>
+
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p class="is-size-6">
+					МГПЕРКК, 2021
+				</p>
+			</div>
+			<nav class="breadcrumb has-dot-separator is-centered" aria-label="breadcrumbs">
+				<ul>
+					<li><a href="/projects" aria-current="page">Проекты</a></li>
+					<li><a href="/team">Команда</a></li>
+					<li><a href="/kantakty">Кантакты</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+	</body>
+
+	<script src="../static/js/jquery/jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+
+		// Check for click events on the navbar burger icon
+		$(".navbar-burger").click(function() {
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				$(".navbar-burger").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+			});
+		});
+	</script>
+
+	<style>
+		@media (max-width : 1020px) {
+			.navbar-menu {
+				display: block;
+				opacity: 0;
+
+				position: absolute;   /* or float: left; width: 100%;*/
+				left: 0;
+				right: 0;
+
+				transform: translateY(-50%);
+				transition: all .2s ease-in-out;
+				pointer-events: none;
+			}
+
+			.navbar-menu.is-active {
+				opacity: 1;
+				transform: none;
+				pointer-events: auto;
+			}
+		}
+	</style>
+
+</html>

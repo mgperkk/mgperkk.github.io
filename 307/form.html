@@ -1,0 +1,29 @@
+<!--<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeeWW5XdD_76QwXdUunEBp8qbZr6QWGleC2RiTnOIhY3wlHgQ/formResponse">
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/';}"></iframe>
+    <input type="hidden" name="entry.253499862_sentinel" jsname="DTMEae">
+    <button type="submit">send</button>
+</form>-->
+<meta charset="utf-8">
+<body>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('#btn').hide(); document.getElementById('#uch').innerHTML = 'uchteno';}"></iframe>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeeWW5XdD_76QwXdUunEBp8qbZr6QWGleC2RiTnOIhY3wlHgQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    <input type="radio" id="_choice1"
+     name="contact" value="не входят" onclick="document.getElementById('fedor').value = this.value;">
+    <label for="choice1">не входят</label>
+
+    <input type="radio" id="_choice2"
+     name="contact" value="должны" onclick="document.getElementById('fedor').value = this.value;">
+    <label for="choice2">должны</label>
+
+    <input id="fedor" type="hidden" name="entry.253499862" value="Тык вот сюда">
+    <input type="hidden" name="entry.253499862_sentinel">
+    <button id="btn" type="submit">send</button>
+    <div id="#uch"></div>
+</form>
+<script src="../static/js/jquery/jquery.js"></script>
+<script>
+    $('#uch').hide();
+</script>
+</body>

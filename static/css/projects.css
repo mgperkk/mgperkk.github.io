@@ -1,0 +1,33 @@
+.mgperkk-tilebg {
+    padding: 0;
+    position: relative;
+    transition: all .25s ease-out;
+    cursor: pointer;
+}
+
+.mgperkk-tilebg:hover span {
+    transform: scale(1.1);
+}
+
+.mgperkk-tilebg-nadpis {
+    font-family: Montserrat bold; 
+    font-size: 1.5em; 
+    background-color: white; 
+    color: black; 
+    padding: 5px 15px 5px 15px; 
+    line-height: 1.5; 
+    border-radius: 6px; 
+    box-sizing: inherit; 
+    display: inline-block;
+    transition: all .25s ease-out;
+}
+
+.mgperkk-tilebg-video {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 6px;
+    z-index: -1;
+    margin-bottom: -10px;
+}
